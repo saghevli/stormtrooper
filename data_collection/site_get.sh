@@ -10,7 +10,7 @@ then
         phantomjs --disk-cache=false --proxy=127.0.0.1:8888 phantom_get.js $3
         #curl -silent -o curl_out.html $2
         #curl -silent -o curl_out.html $3
-        printf '%d of %d \r' $i $1
+        printf '%d of %d\n' $i $1
     done
 else
     echo "standard connection"
