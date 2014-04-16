@@ -1,0 +1,303 @@
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+78,0,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+74,0.00681400299072,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,0.000120878219604,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+247,0.00155401229858,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+66,0.00660300254822,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1484,0.00243091583252,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1484,3.09944152832e-06,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+771,3.09944152832e-06,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,7.48634338379e-05,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,5.00679016113e-06,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+141,0.015839099884,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+72,6.91413879395e-06,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+135,9.53674316406e-07,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+66,0.00781106948853,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+141,3.09944152832e-06,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,4.10079956055e-05,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+1484,0.000204801559448,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+221,4.05311584473e-06,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+66,0.0066499710083,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1479,0.0844411849976,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,6.29425048828e-05,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1479,0.000187873840332,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1479,3.21865081787e-05,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,2.28881835938e-05,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,4.05311584473e-06,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1479,9.79900360107e-05,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1479,4.05311584473e-06,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1479,1.90734863281e-06,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1479,1.90734863281e-06,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1479,3.09944152832e-06,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1479,3.40938568115e-05,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1479,2.86102294922e-06,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,1.00135803223e-05,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,3.09944152832e-06,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,1.59740447998e-05,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,1.59740447998e-05,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,1.90734863281e-06,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,1.21593475342e-05,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,1.59740447998e-05,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,4.05311584473e-06,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,0.00010085105896,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1484,0.00663995742798,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1484,3.09944152832e-06,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1484,2.86102294922e-06,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1484,2.14576721191e-06,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1484,1.90734863281e-06,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1484,2.14576721191e-06,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1484,1.90734863281e-06,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1484,1.90734863281e-06,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1484,2.14576721191e-06,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1484,1.90734863281e-06,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,7.10487365723e-05,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,3.09944152832e-06,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,9.53674316406e-07,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,1.50203704834e-05,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,1.90734863281e-06,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,7.10487365723e-05,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1484,0.000118017196655,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1484,8.39233398438e-05,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1484,2.14576721191e-06,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1484,1.90734863281e-06,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1484,1.90734863281e-06,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1484,3.09944152832e-06,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,3.00407409668e-05,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,1.90734863281e-06,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,1.00135803223e-05,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,4.05311584473e-06,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,3.50475311279e-05,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1484,0.00631093978882,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1484,2.86102294922e-06,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1484,2.14576721191e-06,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,5.3882598877e-05,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,9.60826873779e-05,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1484,0.000176906585693,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+1484,2.14576721191e-06,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+243,9.53674316406e-07,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,2.59876251221e-05,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,9.53674316406e-07,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,0.000157117843628,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+1484,0.176343917847,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+493,8.10623168945e-06,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+66,0.00713181495667,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+871,0.0616030693054,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,4.50611114502e-05,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+135,0.00194597244263,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,5.3882598877e-05,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+78,0.0514512062073,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+74,0.00690984725952,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,7.20024108887e-05,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+279,0.00108599662781,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+66,0.00662708282471,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+227,0.000422954559326,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,8.20159912109e-05,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+72,0.000277042388916,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+135,4.05311584473e-06,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+1484,0.000165939331055,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+1197,6.91413879395e-06,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+66,0.00642800331116,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+66,0.000797033309937,False
+dest_ip: 192.168.1.112
+[Errno 1] Unknown host
+343,0.0148749351501,False
+dest_ip: 74.125.225.115
+cannot concatenate 'str' and 'tuple' objects
+66,7.41481781006e-05,False

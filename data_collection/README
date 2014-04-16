@@ -1,0 +1,11 @@
+
+streams contains:
+    pcaps/: used to hold raw pcap files from collection
+    other folders: each contains a set of split tcp streams
+
+    pass pcap_split.sh a pcap that you wish to split and a directory you want to extract to. it will split the pcap into a set of smaller pcaps, one per tcp stream
+    use capcount.py and pcap_ips.py to perform sanity checks on data that has been split 
+
+
+data_for_ml contains:
+    data that has been formatted with formatter.py or other scripts for ML
