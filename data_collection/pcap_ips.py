@@ -8,7 +8,7 @@ import pprint
 def main():
     if len(sys.argv) < 3:
         print("Prints dest and src ips, along with packet counts for each file")
-        print("Usage: pcap_ips.py <stream_dir> <number of files> <sorted(optional)>")
+        print("Usage: pcap_ips.py <stream_dir> <number of files>")
     directory_name = sys.argv[1]
     max_file = int(sys.argv[2])
     last_time = 0
