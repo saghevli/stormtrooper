@@ -5,7 +5,7 @@ A machine learning approach to fingerprinting web traffic
 
 Software stack from pcap to machine learning:
 
-i*1. traffic capture
+*1. traffic capture
 
     capture data on the wire, filter on local IP address, export/save as .pcap file
 
