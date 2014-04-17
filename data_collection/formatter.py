@@ -7,18 +7,29 @@ import sys
 import pprint
 import operator
 
-
+# whitelist file is of the form:
+# <ip prefix> <ip label>
 def main():
-    if len(sys.argv) < 3:
-        print("Usage: formatter.py <stream_dir> <number of files>")
+    if len(sys.argv) < 5:
+        print("Usage: formatter.py <stream_dir> <number of files> <whitelist[file/0]> <threshold packet count>")
         return
     directory_name = sys.argv[1]
     max_file = int(sys.argv[2])
+    min_packets = int(sys.argv[4])
     flows = {}
+    whitelist = []
     drop_file_count = 0
     drop_packet_count = 0
 
     #print(max_file)
+
+    if sys.argv[3] != '0':
+        f = open(sys.argv[3], 'r')
+        for line in f:
+            pair = line.split(' ')
+            assert(len(pair) == 2)
+            #whitelist contains ip prefix and label
+            whitelist.append([pair[0].rstrip(), pair[1].rstrip()])
 
     num_traces = 0
 
@@ -29,6 +40,7 @@ def main():
         packet_count = 0
         list_of_packetLists = []
         server_ip = ""
+        server_name = "Default"
         for ts, pkt in dpkt.pcap.Reader(open(directory_name + "/stream-" + str(i) + ".pcap", 'r')):
             eth = dpkt.ethernet.Ethernet(pkt)
             if eth.type != dpkt.ethernet.ETH_TYPE_IP:
@@ -39,11 +51,18 @@ def main():
             src_ip_addr_str = socket.inet_ntoa(ip.src)
 
             # if first packet in the file, set server_ip to the remote ip
-            # and check that it isn't equal to an outlier. if so, skip file
+            # and check that it isn't equal to an outlier. if so, skip file:
             if packet_count == 0:
                 server_ip = dst_ip_addr_str if src_ip_addr_str.find("35.2") == 0 else src_ip_addr_str
-                if server_ip.find('173.192') == 0 or server_ip.find("184.173") == 0 :
-                    drop_file_count += 1
+                # loop through whitelist and drop files that don't match
+                found = False
+                for pair in whitelist:
+                    if server_ip.find(pair[0]) == 0:
+                        found = True
+                        server_name = pair[1]
+                        break
+                # if this ip not found on whitelist, drop file
+                if not found:
                     break
 
             packet_count += 1
@@ -58,22 +77,25 @@ def main():
             packetList = [ ts, len(pkt), delta, dst_ip_addr_str ]
             list_of_packetLists.append(packetList)
 
-        # if file skipped, continue
-        if packet_count == 0:
+        # if file skipped or not enough packets, continue
+        if packet_count == 0 or packet_count < min_packets:
+            drop_file_count += 1
             continue
 
         num_traces += 1
         flows[i] = [packet_count, list_of_packetLists]
         #uncomment to include server ip above classification for debugging
         #print(server_ip)
-        if server_ip.find("180.76") == 0:
+        #if server_ip.find("141.212") == 0:
             #print("Baidu")
-            content = content + "Baidu\n"
-        else:
+         #   content = content + "Telex\n"
+        #else:
             #print("Google")
-            content = content + "Google\n"
+         #   content = content + "Baidu\n"
+        # server name is set when server IP is identified on whitelist
+        content = content + server_name + "\n"
         #print(packet_count)
-        content = content + (packet_count + "\n")
+        content = content + (str(packet_count) + "\n")
         for pl in list_of_packetLists:
             classification = ""
             if pl[3].find("35.2") == 0 :
@@ -81,7 +103,7 @@ def main():
             else :
                 classification = "send"
             #print(pl[1], pl[2], classification)
-            content = content + (pl[1] + " " + pl[2] + " " + classification + "\n")
+            content += (str(pl[1]) + " " + str(pl[2]) + " " + str(classification) + "\n")
 
     print(num_traces)
     print(content)
