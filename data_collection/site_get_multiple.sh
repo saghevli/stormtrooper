@@ -8,16 +8,19 @@ maxargz="$#"
 
 iter=argz[0]
 
-i=1
-while (( i < maxargz ))
+for ((j=0; j<iter; j++))
 do
-    site=${argz[$i]}
-    ((i += 1))
-    telex=${argz[$i]}
-    ((i += 1))
+    echo "\nIteration $j\n"
+    i=1
     
-    for ((j=0; j<iter; j++))
+    while (( i < maxargz ))
     do
+
+        site=${argz[$i]}
+        ((i += 1))
+        telex=${argz[$i]}
+        ((i += 1))
+
         if [ "$telex" = "y" ]
         then
             echo "Telex $site"
