@@ -5,7 +5,7 @@ A machine learning approach to fingerprinting web traffic
 
 Software stack from pcap to machine learning:
 
-1. traffic capture
+i*1. traffic capture
 
     capture data on the wire, filter on local IP address, export/save as .pcap file
 
@@ -13,7 +13,7 @@ Software stack from pcap to machine learning:
 
     - use site_get.sh or site_get_multiple.sh for collection
 
-2. split TCP streams
+*2. split TCP streams
 
     data_collection/streams/pcap_split.sh <input_pcap> <output_directory>
 
@@ -23,7 +23,7 @@ Software stack from pcap to machine learning:
 
     - operation: split pcap into a number of streams as separate pcap files
 
-3. sanity checking
+*3. sanity checking
 
     - data_collection/pcap_ips.py <stream dir> <number of files>
 
@@ -33,7 +33,7 @@ Software stack from pcap to machine learning:
 
       *note: you can run this while step 2 is still running, just limit the number of files to the number that have thus far been processed
 
-4. format for ML
+*4. format for ML
 
     -data_collection/formatter.py <stream_dir> <number of files> <whitelist[file/0]> <threshold packet count>
 
@@ -51,7 +51,7 @@ Software stack from pcap to machine learning:
 
      ensure that if this class has been used before, you use the same exact spelling 
 
-5. BLJL
+*5. BLJL
 
     - run classifier: ./bljl <training_file> <test_file>
 
