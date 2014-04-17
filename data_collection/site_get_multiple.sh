@@ -1,7 +1,7 @@
 #!/bin/bash
-#Usage: sh site_get.sh <iterations> <site1> <site2> <site3> ...etc
+#Usage: sh site_get_multiple.sh <iterations> <site1> <site2> <site3> ...etc
 # each site should be followed by a y/n for Telex or No Telex
-# example: sh site_get.sh 100 google.com y baidu.com n something.org y yahoo.com n (etc)
+# example: sh site_get_multiple.sh 100 google.com y baidu.com n something.org y yahoo.com n (etc)
 
 argz=("$@")
 maxargz="$#"
