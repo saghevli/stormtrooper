@@ -8,6 +8,6 @@ var url = args[1];
 var page = require('webpage').create();
 page.open(url, function (status) {
       //Page is loaded!
-      console.log(url + " successfully loaded");
+      console.log(url + " " + status);
       phantom.exit();
 });
