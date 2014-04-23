@@ -53,7 +53,7 @@ def main():
             # if first packet in the file, set server_ip to the remote ip
             # and check that it isn't equal to an outlier. if so, skip file:
             if packet_count == 0:
-                server_ip = dst_ip_addr_str if src_ip_addr_str.find("35.2") == 0 else src_ip_addr_str
+                server_ip = dst_ip_addr_str if src_ip_addr_str.find("172.31") == 0 else src_ip_addr_str
                 # loop through whitelist and drop files that don't match
                 found = False
                 for pair in whitelist:
@@ -63,6 +63,7 @@ def main():
                         break
                 # if this ip not found on whitelist, drop file
                 if not found:
+                    sys.stderr.write("Dropped: " + server_ip + '\n')
                     break
 
             packet_count += 1
