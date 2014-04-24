@@ -9,6 +9,7 @@ import operator
 
 # whitelist file is of the form:
 # <ip prefix> <ip label>
+my_ip = "172.31"
 def main():
     if len(sys.argv) < 5:
         print("Usage: formatter.py <stream_dir> <number of files> <whitelist[file/0]> <threshold packet count>")
@@ -53,7 +54,7 @@ def main():
             # if first packet in the file, set server_ip to the remote ip
             # and check that it isn't equal to an outlier. if so, skip file:
             if packet_count == 0:
-                server_ip = dst_ip_addr_str if src_ip_addr_str.find("172.31") == 0 else src_ip_addr_str
+                server_ip = dst_ip_addr_str if src_ip_addr_str.find(my_ip) == 0 else src_ip_addr_str
                 # loop through whitelist and drop files that don't match
                 found = False
                 for pair in whitelist:
@@ -99,7 +100,7 @@ def main():
         content = content + (str(packet_count) + "\n")
         for pl in list_of_packetLists:
             classification = ""
-            if pl[3].find("35.2") == 0 :
+            if pl[3].find(my_ip) == 0 :
                 classification = "recv"
             else :
                 classification = "send"
