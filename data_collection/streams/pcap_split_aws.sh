@@ -4,6 +4,7 @@
 #Usage: sh pcap_split.sh <input_filename> <output_directory>
 #run from streams directory
 mkdir $2
+tshark -r $1 -T fields -e tcp.stream | sort -n | uniq
 for stream in `tshark -r $1 -T fields -e tcp.stream | sort -n | uniq`
 do
     echo $stream
